@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.5 on win32)" generated="20220703 09:26:20.511" rpa="false" schemaversion="3">
+<suite id="s1" name="pythonProject" source="C:\Users\Asus\Desktop\pythonProject">
+<suite id="s1-s1" name="Test1" source="C:\Users\Asus\Desktop\pythonProject\test1.robot">
+<test id="s1-s1-t1" name="Create Space Test" line="103">
+<kw name="Log Into Knime">
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${WEBSITE}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220703 09:26:21.068" level="INFO">Opening browser 'chrome' to base url 'https://hub.knime.com/'.</msg>
+<status status="PASS" starttime="20220703 09:26:21.068" endtime="20220703 09:26:23.443"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${COOKIES}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220703 09:26:23.443" endtime="20220703 09:26:24.216"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${COOKIES}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 09:26:24.224" level="INFO">Clicking element '//button[@class="accept-button button primary"]'.</msg>
+<status status="PASS" starttime="20220703 09:26:24.216" endtime="20220703 09:26:24.312"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SIGN_IN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 09:26:24.320" level="INFO">Clicking element '//div[@class="login"]//button'.</msg>
+<status status="PASS" starttime="20220703 09:26:24.312" endtime="20220703 09:26:24.477"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:edit-name</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220703 09:26:24.478" endtime="20220703 09:26:26.250"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:edit-name</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220703 09:26:26.258" level="INFO">Typing text 'mmiletic' into text field 'id:edit-name'.</msg>
+<status status="PASS" starttime="20220703 09:26:26.258" endtime="20220703 09:26:26.387"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:edit-pass</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220703 09:26:26.387" level="INFO">Typing text 'Mikaknime2022!' into text field 'id:edit-pass'.</msg>
+<status status="PASS" starttime="20220703 09:26:26.387" endtime="20220703 09:26:26.570"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:edit-submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 09:26:26.570" level="INFO">Clicking element 'id:edit-submit'.</msg>
+<status status="PASS" starttime="20220703 09:26:26.570" endtime="20220703 09:26:28.955"/>
+</kw>
+<status status="PASS" starttime="20220703 09:26:21.060" endtime="20220703 09:26:28.955"/>
+</kw>
+<kw name="Go To Spaces Page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${USER_DROPDOWN_MENU}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220703 09:26:28.955" endtime="20220703 09:26:29.011"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${USER_DROPDOWN_MENU}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 09:26:29.011" level="INFO">Clicking element '//div[@class="avatar avatar-placeholder "]'.</msg>
+<status status="PASS" starttime="20220703 09:26:29.011" endtime="20220703 09:26:29.115"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${SPACES_LINK}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220703 09:26:29.139" level="INFO">Current page contains element '//div[@class="submenu"]//div[@class="menu-wrapper expanded"]//ul//li[2]'.</msg>
+<status status="PASS" starttime="20220703 09:26:29.115" endtime="20220703 09:26:29.139"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SPACES_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 09:26:29.139" level="INFO">Clicking element '//div[@class="submenu"]//div[@class="menu-wrapper expanded"]//ul//li[2]'.</msg>
+<status status="PASS" starttime="20220703 09:26:29.139" endtime="20220703 09:26:29.211"/>
+</kw>
+<status status="PASS" starttime="20220703 09:26:28.955" endtime="20220703 09:26:29.219"/>
+</kw>
+<kw name="Create New Space">
+<arg>${sp_type}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//div[@class="create-space-card"]//div[@class="buttons"]//button[@class="button compact"][${sp_type}]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220703 09:26:29.219" endtime="20220703 09:26:31.096"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@class="create-space-card"]//div[@class="buttons"]//button[@class="button compact"][${sp_type}]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 09:26:31.096" level="INFO">Clicking element '//div[@class="create-space-card"]//div[@class="buttons"]//button[@class="button compact"][1]'.</msg>
+<status status="PASS" starttime="20220703 09:26:31.096" endtime="20220703 09:26:31.192"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SAVE_SPACE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220703 09:26:31.192" endtime="20220703 09:26:31.950"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SAVE_SPACE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 09:26:31.950" level="INFO">Clicking element '//button[@title="Save"]'.</msg>
+<status status="PASS" starttime="20220703 09:26:31.950" endtime="20220703 09:26:32.054"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${NOTIFICATION_MESSAGE}</arg>
+<arg>${CREATE_SUCCESS_MESSAGE}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220703 09:26:32.118" level="INFO">Element '//div[@class="title"]//span[@class="message"]' contains text 'Your new space was created successfully!'.</msg>
+<status status="PASS" starttime="20220703 09:26:32.054" endtime="20220703 09:26:32.118"/>
+</kw>
+<status status="PASS" starttime="20220703 09:26:29.219" endtime="20220703 09:26:32.118"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220703 09:26:33.132" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220703 09:26:32.118" endtime="20220703 09:26:33.132"/>
+</kw>
+<kw name="Get New Space Name">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${NEW_SPACE_NAME}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220703 09:26:33.132" endtime="20220703 09:26:33.180"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${CURRENT_SPACE}</var>
+<arg>${NEW_SPACE_NAME}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220703 09:26:33.220" level="INFO">${CURRENT_SPACE} = New space 14</msg>
+<status status="PASS" starttime="20220703 09:26:33.180" endtime="20220703 09:26:33.220"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${CURRENT_SPACE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20220703 09:26:33.228" level="INFO">${CURRENT_SPACE} = New space 14</msg>
+<status status="PASS" starttime="20220703 09:26:33.228" endtime="20220703 09:26:33.228"/>
+</kw>
+<status status="PASS" starttime="20220703 09:26:33.132" endtime="20220703 09:26:33.228"/>
+</kw>
+<kw name="Check If New Space Exists">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LINK_TO_SPACES_PAGE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 09:26:33.228" level="INFO">Clicking element '//nav[@class="breadcrumb"]//ul//li[3]//a'.</msg>
+<status status="PASS" starttime="20220703 09:26:33.228" endtime="20220703 09:26:33.420"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220703 09:26:35.439" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220703 09:26:33.420" endtime="20220703 09:26:35.455"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${href}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220703 09:26:35.495" level="INFO">${href} = https://hub.knime.com/mmiletic/spaces</msg>
+<status status="PASS" starttime="20220703 09:26:35.455" endtime="20220703 09:26:35.495"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${USERS_SPACES_PAGE}</arg>
+<arg>${href}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220703 09:26:35.495" endtime="20220703 09:26:35.495"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${CURRENT_SPACE}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220703 09:26:35.503" endtime="20220703 09:26:35.527"/>
+</kw>
+<status status="PASS" starttime="20220703 09:26:33.228" endtime="20220703 09:26:35.527"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220703 09:26:35.527" endtime="20220703 09:26:37.919"/>
+</kw>
+<doc>This test creates a single space. Variables needed are the user's KNIME username and password.
+Type of space needs to be specified as well: sp_type=1 is for private, sp_type=2 is for public.
+If the type of space is not defined, the default is private</doc>
+<tag>KH-1</tag>
+<status status="PASS" starttime="20220703 09:26:21.060" endtime="20220703 09:26:37.919"/>
+</test>
+<status status="PASS" starttime="20220703 09:26:20.568" endtime="20220703 09:26:37.919"/>
+</suite>
+<status status="PASS" starttime="20220703 09:26:20.519" endtime="20220703 09:26:37.927"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">KH-1</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="pythonProject">pythonProject</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test1">pythonProject.Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
