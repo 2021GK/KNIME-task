@@ -7,7 +7,7 @@
 - `pip install robotframework`
 - `pip install selenium`
 - `pip install robotframework-seleniumlibrary`
-3. Clone this repo by running `git clone ...`
+3. Clone this repo by running `git clone https://github.com/2021GK/KNIME-task.git`
 4. Navigate to the project's folder
 
 ## How to run tests
@@ -72,5 +72,5 @@ Here are some tips on how to overcome the problem:
 | BUG\_03<br> | Icons not working                                      | None of the icons at the<br>bottom of the spaces<br>cards are functional<br>(out of scope?)                                                                |                    |
 | BUG\_04<br> | The footer does not match the sample<br>screen capture | (out of scope?)                                                                                                                                            |                    |
 
-![alt text]()
-![alt text]()
+![alt text](https://github.com/2021GK/KNIME-task/blob/main/Screenshot_01.png)
+![alt text](https://github.com/2021GK/KNIME-task/blob/main/Screenshot_02.png)
