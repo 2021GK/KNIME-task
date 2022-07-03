@@ -1,4 +1,4 @@
-# KNIME-challenge
+# KNIME-task
 
 ## Before starting
 
@@ -72,5 +72,8 @@ Here are some tips on how to overcome the problem:
 | BUG\_03<br> | Icons not working                                      | None of the icons at the<br>bottom of the spaces<br>cards are functional<br>(out of scope?)                                                                |                    |
 | BUG\_04<br> | The footer does not match the sample<br>screen capture | (out of scope?)                                                                                                                                            |                    |
 
+Screenshot_01.png
 ![alt text](https://github.com/2021GK/KNIME-task/blob/main/Screenshot_01.png)
+
+Screenshot_02.png
 ![alt text](https://github.com/2021GK/KNIME-task/blob/main/Screenshot_02.png)
