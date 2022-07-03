@@ -1,6 +1,4 @@
-# KNIME-challene
-KNIME interview challenge
-
+# KNIME-challenge
 
 ## Before starting
 
